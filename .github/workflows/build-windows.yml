@@ -22,10 +22,10 @@ jobs:
         run: pip install pyinstaller requests
 
       - name: Build Windows EXE
-        run: pyinstaller --clean --onefile --icon=randomfood.ico randomfood.py
+        run: pyinstaller --clean --onefile --name=guessthefood --icon=randomfood.ico randomfood.py
 
       - name: Upload Windows EXE
         uses: actions/upload-artifact@v4
         with:
-          name: GuesstheFood
-          path: dist/GuesstheFood.exe
+          name: randomfood-windows
+          path: dist/guessthefood.exe
