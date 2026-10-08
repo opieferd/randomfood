@@ -27,5 +27,5 @@ jobs:
       - name: Upload Windows EXE
         uses: actions/upload-artifact@v4
         with:
-          name: randomfood-windows
-          path: dist/randomfood.exe
+          name: GuesstheFood
+          path: dist/GuesstheFood.exe
